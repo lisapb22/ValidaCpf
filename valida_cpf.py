@@ -9,3 +9,5 @@ def valida_cpf(cpf):
         return False
     elif 
 
+
+#Fonte:https://dicasdeprogramacao.com.br/algoritmo-para-validar-cpf/
