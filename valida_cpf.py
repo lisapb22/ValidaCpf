@@ -15,5 +15,6 @@ def valida_cpf(cpf):
         num_mult -= 1
         i += 1
     if soma*10//11 == 10:
-        
+        if cpf[9] == 0:
+            
     
