@@ -34,8 +34,7 @@ def CPF_Valido(cpf):
     soma = 0
     for i in range(0, 9):
         soma += int(cpf[i]) * num_mult
-        num_mult -= 1
-        i += 1   
+        num_mult -= 1   
     if round(soma*10%11) == 10 and int(cpf[9]) == 0:
         pass
     elif round(soma*10%11) == int(cpf[9]):
@@ -47,7 +46,6 @@ def CPF_Valido(cpf):
     for i in range(0, 10):
         soma += int(cpf[i]) * num_mult
         num_mult -= 1
-        i += 1
     if round(soma*10%11) == 10 and int(cpf[10]) == 0:
         return True
     elif round(soma*10%11) == int(cpf[10]):
