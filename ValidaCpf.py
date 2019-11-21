@@ -20,8 +20,11 @@
 ##(299 + 6x2)x10 mod 11 = 3150 mod 11 = 8, portanto DV2 = 8
 ##Etapa 3: DV1x10 + DV2 = 6x10 + 8 = 68, que é o número procurado.
 def CPF_Valido(cpf):
-    cpf = cpf.replace(".","")
-    cpf = cpf.replace("-","")
+    new_cpf = ''
+    for caracter in cpf:
+        if caracter.isdigit():
+            new_cpf += caracter
+    cpf = new_cpf
     tam = len(cpf)
     if tam!= 11:
         return False
